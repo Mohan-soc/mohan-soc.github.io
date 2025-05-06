@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cyber Deduction Engineering</title>
+  <title>Blue Defense Engineering</title>
+  <meta name="description" content="Blue Defense Engineering - Threat Detection Use-cases, SIEM Optimization, and Cyber Defense Services by Mohan V.">
+  <meta name="keywords" content="Detection Engineering, Blue Team, SIEM, Cybersecurity, Threat Intelligence, Use-case creation, Mohan V">
+  <meta name="author" content="Mohan V">
   <style>
     body {
       margin: 0;
@@ -41,6 +44,7 @@
       color: #ccc;
       font-style: italic;
       animation: fadeIn 3s ease-in;
+      margin: 5px 0;
     }
 
     .cta-button {
@@ -95,45 +99,24 @@
       animation: float 3s ease-in-out infinite alternate;
     }
 
-    @keyframes float {
-      0% { transform: translateY(0); }
-      100% { transform: translateY(-15px); }
+    .contact-linkedin {
+      text-align: center;
+      margin-top: 20px;
     }
 
-    .contact form {
-      max-width: 600px;
-      margin: auto;
-    }
-
-    .contact form input,
-    .contact form textarea {
-      width: 100%;
-      padding: 12px;
-      margin: 10px 0;
-      border: none;
-      border-radius: 5px;
-      background-color: #222;
+    .contact-linkedin a {
+      display: inline-block;
+      background-color: #0077b5;
       color: #fff;
-    }
-
-    .contact form label {
-      display: block;
-      margin-top: 10px;
-      color: #ff4c4c;
-    }
-
-    .contact form button {
-      background-color: #ff3333;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
+      padding: 12px 25px;
+      text-decoration: none;
       border-radius: 5px;
-      cursor: pointer;
-      margin-top: 10px;
+      font-weight: bold;
+      transition: background-color 0.3s;
     }
 
-    .contact form button:hover {
-      background-color: #cc0000;
+    .contact-linkedin a:hover {
+      background-color: #005582;
     }
 
     footer {
@@ -142,6 +125,11 @@
       padding: 20px;
       font-size: 0.9rem;
       color: #aaa;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-15px); }
     }
 
     @keyframes fadeInDown {
@@ -165,14 +153,15 @@
   <div id="particles-js"></div>
 
   <header>
-    <h1>Cyber Deduction Engineering</h1>
-    <p>"Knowing your enemy will help you build better defense and defend against sophisticated attacks"</p>
+    <h1>Blue Defense Engineering</h1>
+    <p>"Know your enemy. Engineer your defense. Outsmart every threat."</p>
+    <p>"Detection engineering is not a skill — it is an art."</p>
     <a href="#contact" class="cta-button">Get a Free SIEM Use-case Audit</a>
   </header>
 
   <section class="about">
     <h2>About Me</h2>
-    <p>I am a cybersecurity expert with over 10 years of hands-on experience managing Security Operations Centers (SOCs), threat detection, and incident response. My expertise spans across SIEM, EDR, XDR, and network security technologies. Through my journey, I’ve helped organizations optimize detection engineering, create robust threat use-cases, and significantly reduce risk exposure. This platform is a gateway to share my advanced deduction rules and insights at an affordable cost.</p>
+    <p>I’m Mohan Valiramani, a cybersecurity strategist with 10+ years of experience in Security Operations Centers (SOCs), threat detection, and incident response. I specialize in SIEM engineering, EDR/XDR tuning, and cyber threat modeling. My goal is to help organizations implement precise, threat-informed detection use-cases to reduce risk and enhance visibility. This platform shares my curated rules, detection insights, and engineering techniques to support blue team professionals globally.</p>
     <p>Connect with me on <a href="https://www.linkedin.com/in/mohan-v-cyber-defence-strategy-expert" target="_blank" style="color:#ff4c4c;">LinkedIn</a>.</p>
   </section>
 
@@ -180,39 +169,46 @@
     <h2>My Services</h2>
     <ul>
       <li>Use-case creation based on threat profiling</li>
-      <li>Use-case creation based on Threat Actor</li>
+      <li>Use-case creation based on threat actors</li>
       <li>Use-case creation based on current attack trends</li>
     </ul>
   </section>
 
-  <div class="floating-logos">
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/splunk.svg" alt="Splunk">
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/ibm.svg" alt="QRadar">
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/crowdstrike.svg" alt="CrowdStrike">
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/microsoft.svg" alt="SentinelOne">
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/zscaler.svg" alt="Zscaler">
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/paloaltosoftware.svg" alt="Palo Alto Cortex">
-  </div>
+  <div class="logo-bar">
+  <img src="https://www.svgrepo.com/svg/354376/splunk" alt="Splunk logo" loading="lazy" height="30">
+  <img src="https://www.svgrepo.com/svg/303377/ibm-logo?edit=true" alt="IBM logo" loading="lazy" height="30">
+  <img src="https://logowik.com/content/uploads/images/crowdstrike3583.logowik.com.webp" alt="CrowdStrike logo" loading="lazy" height="30">
+  <img src="https://icons8.com/icon/22989/microsoft" alt="Microsoft Sentinel logo" loading="lazy" height="30">
+  <img src="https://logosandtypes.com/alphabet/letter-z/zscaler/" alt="Zscaler logo" loading="lazy" height="30">
+  <img src="https://www.paloaltonetworks.com/content/dam/pan/en_US/logos/cortex-primary.svg" alt="Palo Alto Cortex logo" loading="lazy" height="30">
+</div>
+
+<style>
+.logo-bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* If you want a dark background for the container: */
+  /* background-color: #1e1e1e; */
+  /* padding: 20px; */
+}
+
+.logo-bar img {
+  height: 30px; /* Adjust the height to control the size */
+  /* width: auto; */
+}
+</style>
 
   <section class="contact" id="contact">
     <h2>Contact Me</h2>
-    <p>Have a question or need help with security use-cases? Reach out for a personalized consultation.</p>
-    <form action="mailto:mohan@example.com" method="POST" enctype="text/plain">
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" placeholder="Your full name" required>
-
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" placeholder="you@example.com" required>
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
+    <p>Have a question or need help with security use-cases? Connect with me directly on LinkedIn.</p>
+    <div class="contact-linkedin">
+      <a href="https://www.linkedin.com/in/mohan-v-cyber-defence-strategy-expert" target="_blank">Message Me on LinkedIn</a>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Cyber Deduction Engineering. Built by Mohan V.</p>
+    <p>&copy; 2025 Blue Defense Engineering. Built by Mohan Valiramani.</p>
   </footer>
 
   <script>
